@@ -558,10 +558,9 @@
       }).observe(end);
     })();
 
-
     document.addEventListener("DOMContentLoaded", function () {
       const urlParams = new URLSearchParams(window.location.search);
-      const fbclid = urlParams.get('fbclid');
+      const fbclid = urlParams.get('fbclid') ?? '';
 
       const ctaLinks = document.querySelectorAll('.myBtn');
 
